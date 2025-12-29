@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submit Resource | StudyLink</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div><img src="logo.jpeg"></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="subjects.html">Subjects</a></li>
+      <li><a href="submit.html">Submit Resource</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <h1>Submit a Resource</h1>
+    <p>Help other students by sharing free learning materials.</p>
+  </section>
+
+  <!-- FORM -->
+  <section class="form-section">
+    <form id="resourceForm" class="resource-form">
+      <input type="text" placeholder="Resource Title" required>
+
+      <select required>
+        <option value="">Select Subject</option>
+        <option>Mathematics</option>
+        <option>Geography</option>
+        <option>English</option>
+        <option>Science</option>
+        <option>Coding</option>
+      </select>
+
+      <select required>
+        <option value="">Resource Type</option>
+        <option>Video</option>
+        <option>PDF</option>
+        <option>Website</option>
+      </select>
+
+      <input type="url" placeholder="Resource Link" required>
+
+      <textarea placeholder="Short description (optional)"></textarea>
+
+      <button type="submit" class="btn">Submit Resource</button>
+    </form>
+
+    <p id="successMessage" class="success-message"></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 StudyLink. Education for everyone.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
